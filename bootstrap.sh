@@ -15,7 +15,7 @@ echo "Installing PHP"
 apt-get install php7.0 php5-dev php7.0-cli php7.0-fpm -y > /dev/null
 
 echo "Installing PHP extensions"
-apt-get install curl php7.0-curl php7.0-gd php7.0-mcrypt php7.0-mysql -y > /dev/null
+apt-get install curl php7.0-curl php7.0-gd php7.0-mcrypt php7.0-mysql php7.0-mbstring -y > /dev/null
 
 echo "Configuring PHP"
 cp /var/www/provision/cli-php.ini /etc/php/7.0/cli/php.ini
