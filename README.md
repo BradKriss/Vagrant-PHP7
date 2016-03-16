@@ -37,4 +37,6 @@ $ vagrant up
 
 I built this for myself and just figured I'd share. It's very possible there's better ways to do some of the things here and if you notice any let me know! That said you should understand what's going on here and use at your own risk.
 
-
+##### Versions
+  - VirtualBox v5.0.16 r105871
+  - Vagrant v1.8.1
