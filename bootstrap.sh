@@ -21,6 +21,9 @@ echo "Configuring PHP"
 cp /var/www/provision/cli-php.ini /etc/php/7.0/cli/php.ini
 cp /var/www/provision/fpm-php.ini /etc/php/7.0/fpm/php.ini
 
+echo "Installing Composer"
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
 echo "Preparing MySQL"
 # debconf-utils allows the root password to be inputed as a command line argument, needed for instalistion
 apt-get install debconf-utils -y > /dev/null
