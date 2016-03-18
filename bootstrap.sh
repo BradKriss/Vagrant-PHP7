@@ -21,6 +21,11 @@ echo "Configuring PHP"
 cp /var/www/provision/cli-php.ini /etc/php/7.0/cli/php.ini
 cp /var/www/provision/fpm-php.ini /etc/php/7.0/fpm/php.ini
 
+echo "Installing PHPUnit"
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+mv phpunit.phar /usr/local/bin/phpunit
+
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
